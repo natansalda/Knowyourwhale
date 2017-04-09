@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Whale Quiz App</string>
+    <string name="putName">what is your name?</string>
+    <string name="start">Start Quiz</string>
+    <string name="intro">Hello</string>
+    <string name="Q1">1. All baleen whales have two blowholes, whilst toothed whales only have one</string>
+    <string name="Q2">2. Dolphins get all the water they need directly from the food they eat</string>
+    <string name="Q3">3. Which of those are true whale spacies?</string>
+    <string name="Q4">4. What was the name of the known killer whale from the family movie about a boy who wanted to free the animal?</string>
+    <string name="Q5">5. Where it is easier to spot a whale?</string>
+    <string name="A1a">True</string>
+    <string name="A1b">False</string>
+    <string name="A2a">True</string>
+    <string name="A2b">False</string>
+    <string name="A3a">Minke Whale</string>
+    <string name="A3b">Sperm Whale</string>
+    <string name="A3c">Orange-headed whale</string>
+    <string name="A3d">Melon-headed whale</string>
+    <string name="A4">your answer here</string>
+    <string name="A5a">Poland</string>
+    <string name="A5b">Island</string>
+    <string name="submit">Submit Answers</string>
+    <string name="answers">See Correct Answers</string>
+    <string name="score">Your score is</string>
+    <string name="for7">/7</string>
+    <string name="Willy">Willy</string>
+</resources>
