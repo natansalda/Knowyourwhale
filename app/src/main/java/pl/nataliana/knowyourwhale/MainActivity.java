@@ -65,8 +65,13 @@ public class MainActivity extends AppCompatActivity {
         String name = txtname.getText().toString();
         Intent i = new Intent(this, pl.nataliana.knowyourwhale.QuizActivity.class);
         i.putExtra("name", name);
+        finish();
         startActivity(i);
     }
 
+    public void onBackPressed() {
+        //  super.onBackPressed();
+        moveTaskToBack(true);
 
+    }
 }

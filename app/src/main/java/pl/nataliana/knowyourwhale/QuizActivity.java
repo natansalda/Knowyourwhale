@@ -145,12 +145,10 @@ public class QuizActivity extends AppCompatActivity {
         textAnswer.setTextColor(GREEN);
     }
 
-    boolean doubleBackToExitPressedOnce = false;
-
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        Intent intent=new Intent(QuizActivity.this,MainActivity .class);
+        Intent intent = new Intent(QuizActivity.this, MainActivity.class);
         startActivity(intent);
         finish();
     }
