@@ -15,21 +15,21 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView TV_English,TV_Polish;
+    TextView TV_English, TV_Polish;
     Locale mylocale;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        TV_English=(TextView)findViewById(R.id.TVEnglish);
-        TV_Polish=(TextView)findViewById(R.id.TVPolish);
+        TV_English = (TextView) findViewById(R.id.TVEnglish);
+        TV_Polish = (TextView) findViewById(R.id.TVPolish);
 
         //Set English Language
         TV_English.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this,"English Language",Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "English Language", Toast.LENGTH_SHORT).show();
                 setLanguage("en");
             }
         });
@@ -38,21 +38,21 @@ public class MainActivity extends AppCompatActivity {
         TV_Polish.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this,"Język polski",Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Język polski", Toast.LENGTH_SHORT).show();
                 setLanguage("pl");
             }
         });
     }
 
     //Change language Method
-    protected void setLanguage(String language){
-        mylocale=new Locale(language);
-        Resources resources=getResources();
-        DisplayMetrics dm=resources.getDisplayMetrics();
-        Configuration conf= resources.getConfiguration();
-        conf.locale=mylocale;
-        resources.updateConfiguration(conf,dm);
-        Intent refreshIntent=new Intent(MainActivity.this,MainActivity.class);
+    protected void setLanguage(String language) {
+        mylocale = new Locale(language);
+        Resources resources = getResources();
+        DisplayMetrics dm = resources.getDisplayMetrics();
+        Configuration conf = resources.getConfiguration();
+        conf.locale = mylocale;
+        resources.updateConfiguration(conf, dm);
+        Intent refreshIntent = new Intent(MainActivity.this, MainActivity.class);
         finish();
         startActivity(refreshIntent);
     }
@@ -68,15 +68,5 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
-    boolean doubleBackToExitPressedOnce = false;
 
-    @Override
-    public void onBackPressed() {
-        if (doubleBackToExitPressedOnce) {
-            super.onBackPressed();
-            return;
-        }
-        this.doubleBackToExitPressedOnce = true;
-        Toast.makeText(this, R.string.exit_press_back_twice_message, Toast.LENGTH_SHORT).show();
-    }
 }

@@ -149,11 +149,9 @@ public class QuizActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        if (doubleBackToExitPressedOnce) {
-            super.onBackPressed();
-            return;
-        }
-        this.doubleBackToExitPressedOnce = true;
-        Toast.makeText(this, R.string.exit_press_back_twice_message, Toast.LENGTH_SHORT).show();
+        super.onBackPressed();
+        Intent intent=new Intent(QuizActivity.this,MainActivity .class);
+        startActivity(intent);
+        finish();
     }
 }
