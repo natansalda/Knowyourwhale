@@ -144,4 +144,16 @@ public class QuizActivity extends AppCompatActivity {
         textAnswer.setText(R.string.Willy);
         textAnswer.setTextColor(GREEN);
     }
+
+    boolean doubleBackToExitPressedOnce = false;
+
+    @Override
+    public void onBackPressed() {
+        if (doubleBackToExitPressedOnce) {
+            super.onBackPressed();
+            return;
+        }
+        this.doubleBackToExitPressedOnce = true;
+        Toast.makeText(this, R.string.exit_press_back_twice_message, Toast.LENGTH_SHORT).show();
+    }
 }

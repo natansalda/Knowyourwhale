@@ -61,17 +61,15 @@
             android:layout_height="56dp"
             android:padding="10dp"
             android:text="@string/english"
-            android:textAppearance="?android:attr/textAppearanceLarge"
             android:textColor="@color/white"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/TVFrench"
+            android:id="@+id/TVPolish"
             android:layout_width="wrap_content"
             android:layout_height="56dp"
             android:padding="10dp"
             android:text="@string/polski"
-            android:textAppearance="?android:attr/textAppearanceLarge"
             android:textColor="@color/white"
             android:textStyle="bold" />
 

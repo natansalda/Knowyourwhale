@@ -29,4 +29,5 @@
     <string name="initial">!  Proszę odpowiedz na wszystkie pytania, by odkryć ile wiesz o waleniach! Powodzenia!</string>
     <string name="english">ENGLISH</string>
     <string name="polski">POLSKI</string>
+    <string name="exit_press_back_twice_message">Naciśnij jeszcze raz by wyjść</string>
 </resources>

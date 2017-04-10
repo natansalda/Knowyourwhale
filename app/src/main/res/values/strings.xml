@@ -28,4 +28,5 @@
     <string name="initial">!  Please answer all questions to know  how much do you know about WHALES!  Good luck!</string>
     <string name="english">ENGLISH</string>
     <string name="polski">POLSKI</string>
+    <string name="exit_press_back_twice_message">Press second time to exit</string>
 </resources>
