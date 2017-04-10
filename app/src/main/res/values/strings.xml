@@ -24,4 +24,8 @@
     <string name="score">Your score is</string>
     <string name="for7">/7</string>
     <string name="Willy">Willy</string>
+    <string name="Hello">Hello</string>
+    <string name="initial">!  Please answer all questions to know  how much do you know about WHALES!  Good luck!</string>
+    <string name="english">ENGLISH</string>
+    <string name="polski">POLSKI</string>
 </resources>

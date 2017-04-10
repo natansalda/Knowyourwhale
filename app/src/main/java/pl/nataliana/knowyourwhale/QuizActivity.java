@@ -51,7 +51,7 @@ public class QuizActivity extends AppCompatActivity {
         A3b = (CheckBox) findViewById(R.id.A3b);
         A3c = (CheckBox) findViewById(R.id.A3c);
         A3d = (CheckBox) findViewById(R.id.A3d);
-        introMessage = "Hello " + name + "! \nPlease answer all questions to know \nhow much do you know about WHALES! \nGood luck!";
+        introMessage = getString(R.string.Hello) + " " + name + getString(R.string.initial);
         intro.setText(introMessage);
     }
 
@@ -144,6 +144,4 @@ public class QuizActivity extends AppCompatActivity {
         textAnswer.setText(R.string.Willy);
         textAnswer.setTextColor(GREEN);
     }
-
-    //This is just a test comment
 }

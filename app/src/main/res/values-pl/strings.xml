@@ -1,0 +1,32 @@
+<resources>
+    <!--Polish-->
+    <string name="app_name">Whale Quiz App</string>
+    <string name="putName">jak masz na imię?</string>
+    <string name="start">Rozpocznij Quiz</string>
+    <string name="intro">Cześć</string>
+    <string name="Q1">1. Wszystkie fiszbinowce mają dwa otwory na grzbiecie, podczas gdy wieloryby zębate mają tylko jeden</string>
+    <string name="Q2">2. Delfiny uzyskują całą wodę potrzebną im do życia wprost ze spożywanego pokarmu</string>
+    <string name="Q3">3. Wybierz prawdziwe gatunki wieloryba</string>
+    <string name="Q4">4. Jak miała na imię słynna orka, bohater rodzinnego filmu o chłopcu, który chciał zwrócić zwierzęciu wolność?</string>
+    <string name="Q5">5. W którym z krajów łatwiej spotkać wieloryba?</string>
+    <string name="A1a">Prawda</string>
+    <string name="A1b">Fałsz</string>
+    <string name="A2a">Prawda</string>
+    <string name="A2b">Fałsz</string>
+    <string name="A3a">Płetwal Karłowaty (Minke Whale)</string>
+    <string name="A3b">Kaszalot (Sperm Whale)</string>
+    <string name="A3c">Pomarańczogłów Zwyczajny (Orange-headed whale)</string>
+    <string name="A3d">Melonogłów Wielozębny (Melon-headed whale)</string>
+    <string name="A4">wpisz odpowiedź</string>
+    <string name="A5a">Polska</string>
+    <string name="A5b">Islandia</string>
+    <string name="submit">Zatwierdź odpowiedzi</string>
+    <string name="answers">Sprawdź odpowiedzi</string>
+    <string name="score">Twój wynik to</string>
+    <string name="for7">/7</string>
+    <string name="Willy">Willy</string>
+    <string name="Hello">Cześć</string>
+    <string name="initial">!  Proszę odpowiedz na wszystkie pytania, by odkryć ile wiesz o waleniach! Powodzenia!</string>
+    <string name="english">ENGLISH</string>
+    <string name="polski">POLSKI</string>
+</resources>

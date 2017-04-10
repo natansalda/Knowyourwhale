@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="pl.nataliana.whalequizapp.MainActivity">
+    tools:context="pl.nataliana.knowyourwhale.MainActivity">
 
     <ImageView
         android:id="@+id/main"
@@ -22,24 +22,58 @@
         android:id="@+id/textName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/startQuiz"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="8dp"
         android:hint="@string/putName"
         android:inputType="textCapWords"
         android:textColor="@color/white"
-        android:textColorHint="@color/white" />
+        android:textColorHint="@color/white"
+        android:layout_above="@+id/Language_layout"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:id="@+id/startQuiz"
         android:layout_width="130dp"
         android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="32dp"
         android:background="@drawable/button"
         android:onClick="startQuiz"
         android:text="@string/start"
         android:textColor="@color/white"
-        android:typeface="monospace" />
+        android:typeface="monospace"
+        android:layout_below="@+id/textName"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/Language_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/TVEnglish"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:padding="10dp"
+            android:text="@string/english"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TVFrench"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:padding="10dp"
+            android:text="@string/polski"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
 </RelativeLayout>
