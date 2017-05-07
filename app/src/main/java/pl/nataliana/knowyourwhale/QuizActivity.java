@@ -11,6 +11,9 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 import static android.graphics.Color.GREEN;
 
 //This is an app for Whale Quiz - after answering all questions you will know how much do you know about whales.
@@ -19,38 +22,27 @@ public class QuizActivity extends AppCompatActivity {
     // variables
     private int score = 0;
     public String introMessage;
-    public TextView intro;
-    public RadioButton trueQ1;
-    public RadioButton falseQ1;
-    public RadioButton trueQ2;
-    public RadioButton falseQ2;
-    public RadioButton poland;
-    public RadioButton island;
-    public CheckBox A3a;
-    public CheckBox A3b;
-    public CheckBox A3c;
-    public CheckBox A3d;
-    public EditText textAnswer;
-
+    @BindView(R.id.intro) TextView intro;
+    @BindView(R.id.trueQ1) RadioButton trueQ1;
+    @BindView(R.id.falseQ1) RadioButton falseQ1;
+    @BindView(R.id.trueQ2) RadioButton trueQ2;
+    @BindView(R.id.falseQ2) RadioButton falseQ2;
+    @BindView(R.id.Poland) RadioButton poland;
+    @BindView(R.id.Island) RadioButton island;
+    @BindView(R.id.A3a) CheckBox A3a;
+    @BindView(R.id.A3b) CheckBox A3b;
+    @BindView(R.id.A3c) CheckBox A3c;
+    @BindView(R.id.A3d) CheckBox A3d;
+    @BindView(R.id.textAnswer) EditText textAnswer;
 
     //this method is called when Start Quiz button is clicked
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
+        ButterKnife.bind(this);
         Intent intent = getIntent();
         String name = intent.getExtras().getString("name");
-        intro = (TextView) findViewById(R.id.intro);
-        trueQ1 = (RadioButton) findViewById(R.id.trueQ1);
-        falseQ1 = (RadioButton) findViewById(R.id.falseQ1);
-        trueQ2 = (RadioButton) findViewById(R.id.trueQ2);
-        falseQ2 = (RadioButton) findViewById(R.id.falseQ2);
-        poland = (RadioButton) findViewById(R.id.Poland);
-        island = (RadioButton) findViewById(R.id.Island);
-        A3a = (CheckBox) findViewById(R.id.A3a);
-        A3b = (CheckBox) findViewById(R.id.A3b);
-        A3c = (CheckBox) findViewById(R.id.A3c);
-        A3d = (CheckBox) findViewById(R.id.A3d);
         introMessage = getString(R.string.Hello) + " " + name + getString(R.string.initial);
         intro.setText(introMessage);
     }
@@ -96,7 +88,6 @@ public class QuizActivity extends AppCompatActivity {
 
     //this method is called to check 4th question
     public void freeWilly() {
-        EditText textAnswer = (EditText) findViewById(R.id.textAnswer);
         String willy = textAnswer.getText().toString();
         Boolean booleanWilly = willy.equalsIgnoreCase(getString(R.string.Willy));
         if (booleanWilly) {
@@ -116,11 +107,9 @@ public class QuizActivity extends AppCompatActivity {
         freeWilly();
         if (score > 5) {
             Toast.makeText(this, getString(R.string.score) + " " + score + getString(R.string.for7) + " " + getString(R.string.goodScore), Toast.LENGTH_LONG).show();
-        }
-        else if (score > 3){
+        } else if (score > 3) {
             Toast.makeText(this, getString(R.string.score) + " " + score + getString(R.string.for7) + " " + getString(R.string.mediumScore), Toast.LENGTH_LONG).show();
-        }
-        else {
+        } else {
             Toast.makeText(this, getString(R.string.score) + " " + score + getString(R.string.for7) + " " + getString(R.string.badScore), Toast.LENGTH_LONG).show();
         }
         score = 0;
@@ -128,17 +117,6 @@ public class QuizActivity extends AppCompatActivity {
 
     //this method is called when the user clicks answers button
     public void answers(View view) {
-        trueQ1 = (RadioButton) findViewById(R.id.trueQ1);
-        falseQ1 = (RadioButton) findViewById(R.id.falseQ1);
-        trueQ2 = (RadioButton) findViewById(R.id.trueQ2);
-        falseQ2 = (RadioButton) findViewById(R.id.falseQ2);
-        A3a = (CheckBox) findViewById(R.id.A3a);
-        A3b = (CheckBox) findViewById(R.id.A3b);
-        A3c = (CheckBox) findViewById(R.id.A3c);
-        A3d = (CheckBox) findViewById(R.id.A3d);
-        poland = (RadioButton) findViewById(R.id.Poland);
-        island = (RadioButton) findViewById(R.id.Island);
-        textAnswer = (EditText) findViewById(R.id.textAnswer);
         trueQ1.setTextColor(GREEN);
         falseQ1.setTextColor(Color.RED);
         trueQ2.setTextColor(GREEN);

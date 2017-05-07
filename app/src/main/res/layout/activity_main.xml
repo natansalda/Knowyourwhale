@@ -16,24 +16,14 @@
 
         <EditText
             android:id="@+id/textName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="@string/putName"
-            android:inputType="textCapWords"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
-            android:textSize="20sp" />
+            style="@style/EditTextStyle"
+            android:hint="@string/putName" />
 
         <Button
             android:id="@+id/startQuiz"
-            android:layout_width="130dp"
-            android:layout_height="50dp"
-            android:background="@drawable/button"
+            style="@style/ButtonMain"
             android:onClick="startQuiz"
-            android:text="@string/start"
-            android:textColor="@color/white"
-            android:textSize="17sp"
-            android:typeface="monospace" />
+            android:text="@string/start" />
 
         <LinearLayout
             android:id="@+id/Language_layout"
@@ -46,23 +36,13 @@
 
             <TextView
                 android:id="@+id/TVEnglish"
-                android:layout_width="wrap_content"
-                android:layout_height="56dp"
-                android:padding="10dp"
-                android:text="@string/english"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                style="@style/TextLanguage"
+                android:text="@string/english" />
 
             <TextView
                 android:id="@+id/TVPolish"
-                android:layout_width="wrap_content"
-                android:layout_height="56dp"
-                android:padding="10dp"
-                android:text="@string/polski"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                style="@style/TextLanguage"
+                android:text="@string/polski" />
 
         </LinearLayout>
     </LinearLayout>

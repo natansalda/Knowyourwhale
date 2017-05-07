@@ -13,17 +13,21 @@ import android.widget.Toast;
 
 import java.util.Locale;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class MainActivity extends AppCompatActivity {
 
-    TextView TV_English, TV_Polish;
-    Locale mylocale;
+    public Locale mylocale;
+    @BindView(R.id.TVEnglish) TextView TV_English;
+    @BindView(R.id.TVPolish) TextView TV_Polish;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        TV_English = (TextView) findViewById(R.id.TVEnglish);
-        TV_Polish = (TextView) findViewById(R.id.TVPolish);
+        ButterKnife.bind(this);
 
         //Set English Language
         TV_English.setOnClickListener(new View.OnClickListener() {

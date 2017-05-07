@@ -14,27 +14,17 @@
 
         <TextView
             android:id="@+id/intro"
-            style="@style/AppTheme"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="15dp"
+            style="@style/AppThemeText"
             android:text="@string/intro" />
 
         <ImageView
             android:id="@+id/imageQ1"
-            style="@style/AppTheme"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:adjustViewBounds="true"
-            android:scaleType="centerCrop"
+            style="@style/Image"
             android:src="@drawable/w2" />
 
         <TextView
             android:id="@+id/Q1"
-            style="@style/AppTheme"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="15dp"
+            style="@style/AppThemeText"
             android:text="@string/Q1" />
 
         <RadioGroup
@@ -44,36 +34,25 @@
 
             <RadioButton
                 android:id="@+id/trueQ1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                style="@style/RadioGroupStyle"
                 android:onClick="clickQ1"
                 android:text="@string/A1a" />
 
             <RadioButton
                 android:id="@+id/falseQ1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                style="@style/RadioGroupStyle"
                 android:onClick="clickQ1"
                 android:text="@string/A1b" />
         </RadioGroup>
 
         <ImageView
             android:id="@+id/imageQ2"
-            style="@style/AppTheme"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:adjustViewBounds="true"
-            android:scaleType="centerCrop"
+            style="@style/Image"
             android:src="@drawable/w9" />
 
         <TextView
             android:id="@+id/Q2"
-            style="@style/AppTheme"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="15dp"
+            style="@style/AppThemeText"
             android:text="@string/Q2" />
 
         <RadioGroup
@@ -83,107 +62,74 @@
 
             <RadioButton
                 android:id="@+id/trueQ2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                style="@style/RadioGroupStyle"
                 android:onClick="clickQ2"
                 android:text="@string/A2a" />
 
             <RadioButton
                 android:id="@+id/falseQ2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                style="@style/RadioGroupStyle"
                 android:onClick="clickQ2"
                 android:text="@string/A2b" />
         </RadioGroup>
 
         <ImageView
             android:id="@+id/imageQ3"
-            style="@style/AppTheme"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:adjustViewBounds="true"
-            android:scaleType="centerCrop"
+            style="@style/Image"
             android:src="@drawable/w3" />
 
         <TextView
             android:id="@+id/Q3"
-            style="@style/AppTheme"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="15dp"
+            style="@style/AppThemeText"
             android:text="@string/Q3" />
 
         <CheckBox
             android:id="@+id/A3a"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/CheckBoxStyle"
             android:onClick="onCheckboxClickedA"
             android:text="@string/A3a" />
 
         <CheckBox
             android:id="@+id/A3b"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/CheckBoxStyle"
             android:onClick="onCheckboxClickedB"
             android:text="@string/A3b" />
 
         <CheckBox
             android:id="@+id/A3c"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/CheckBoxStyle"
             android:onClick="onCheckboxClickedC"
             android:text="@string/A3c" />
 
         <CheckBox
             android:id="@+id/A3d"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/CheckBoxStyle"
             android:onClick="onCheckboxClickedD"
             android:text="@string/A3d" />
 
         <ImageView
             android:id="@+id/imageQ4"
-            style="@style/AppTheme"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:adjustViewBounds="true"
-            android:scaleType="centerCrop"
+            style="@style/Image"
             android:src="@drawable/killerwhale" />
 
         <TextView
             android:id="@+id/Q4"
-            style="@style/AppTheme"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="15dp"
+            style="@style/AppThemeText"
             android:text="@string/Q4" />
 
         <EditText
             android:id="@+id/textAnswer"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="@string/A4"
-            android:inputType="textCapWords"
-            android:textColor="@color/black"
-            android:textColorHint="@color/black" />
+            style="@style/EditTextQuiz"
+            android:hint="@string/A4" />
 
         <ImageView
             android:id="@+id/imageQ5"
-            style="@style/AppTheme"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:adjustViewBounds="true"
-            android:scaleType="centerCrop"
+            style="@style/Image"
             android:src="@drawable/w8" />
 
         <TextView
             android:id="@+id/Q5"
-            style="@style/AppTheme"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="15dp"
+            style="@style/AppThemeText"
             android:text="@string/Q5" />
 
         <RadioGroup
@@ -193,37 +139,27 @@
 
             <RadioButton
                 android:id="@+id/Poland"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                style="@style/RadioGroupStyle"
                 android:onClick="clickQ5"
                 android:text="@string/A5a" />
 
             <RadioButton
                 android:id="@+id/Island"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                style="@style/RadioGroupStyle"
                 android:onClick="clickQ5"
                 android:text="@string/A5b" />
         </RadioGroup>
 
         <Button
             android:id="@+id/submit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/button"
+            style="@style/ButtonQuiz"
             android:onClick="submit"
-            android:text="@string/submit"
-            android:textColor="@color/white" />
+            android:text="@string/submit" />
 
         <Button
             android:id="@+id/answers"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/button"
+            style="@style/ButtonQuiz"
             android:onClick="answers"
-            android:text="@string/answers"
-            android:textColor="@color/white" />
+            android:text="@string/answers" />
     </LinearLayout>
 </ScrollView>
