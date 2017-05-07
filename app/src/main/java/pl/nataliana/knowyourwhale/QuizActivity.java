@@ -45,6 +45,22 @@ public class QuizActivity extends AppCompatActivity {
         String name = intent.getExtras().getString("name");
         introMessage = getString(R.string.Hello) + " " + name + getString(R.string.initial);
         intro.setText(introMessage);
+        // recovering the instance state
+        if (savedInstanceState != null) {
+            score = savedInstanceState.getInt("SCORE");
+        }
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        outState.putInt("SCORE", score);
+        // call superclass
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    public void onRestoreInstanceState(Bundle savedInstanceState) {
+        savedInstanceState.getInt("SCORE");
     }
 
     //this method is called when the user answers 1st question
