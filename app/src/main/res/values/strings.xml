@@ -22,7 +22,7 @@
     <string name="submit">Submit Answers</string>
     <string name="answers">See Correct Answers</string>
     <string name="score">Your score is</string>
-    <string name="for7">/7</string>
+    <string name="for7">/5</string>
     <string name="Willy">Willy</string>
     <string name="Hello">Hello</string>
     <string name="initial">!  Please answer all questions to know  how much do you know about WHALES!  Good luck!</string>
@@ -32,4 +32,5 @@
     <string name="goodScore">Congratulations, you did well!</string>
     <string name="mediumScore">Could be better!</string>
     <string name="badScore">You may want to try again!</string>
+    <string name="submitCheckBox">Submit choice</string>
 </resources>

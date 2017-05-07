@@ -19,8 +19,8 @@ import butterknife.ButterKnife;
 public class MainActivity extends AppCompatActivity {
 
     public Locale mylocale;
-    @BindView(R.id.TVEnglish) TextView TV_English;
-    @BindView(R.id.TVPolish) TextView TV_Polish;
+    @BindView(R.id.english) TextView english;
+    @BindView(R.id.polish) TextView polish;
 
 
     @Override
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         //Set English Language
-        TV_English.setOnClickListener(new View.OnClickListener() {
+        english.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(MainActivity.this, "English Language", Toast.LENGTH_SHORT).show();
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //Set Polish Language
-        TV_Polish.setOnClickListener(new View.OnClickListener() {
+        polish.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(MainActivity.this, "Język polski", Toast.LENGTH_SHORT).show();

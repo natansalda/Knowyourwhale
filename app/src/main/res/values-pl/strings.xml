@@ -23,7 +23,7 @@
     <string name="submit">Zatwierdź odpowiedzi</string>
     <string name="answers">Sprawdź odpowiedzi</string>
     <string name="score">Twój wynik to</string>
-    <string name="for7">/7</string>
+    <string name="for7">/5</string>
     <string name="Willy">Willy</string>
     <string name="Hello">Cześć</string>
     <string name="initial">!  Proszę odpowiedz na wszystkie pytania, by odkryć ile wiesz o waleniach! Powodzenia!</string>
@@ -33,4 +33,5 @@
     <string name="goodScore">Gratulacje, świetnie ci poszło!</string>
     <string name="badScore">Spróbuj jeszcze raz!</string>
     <string name="mediumScore">Mogło być lepiej!</string>
+    <string name="submitCheckBox">Zatwierdź wybór</string>
 </resources>

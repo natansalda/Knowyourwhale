@@ -26,7 +26,7 @@
             android:text="@string/start" />
 
         <LinearLayout
-            android:id="@+id/Language_layout"
+            android:id="@+id/language_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
@@ -35,12 +35,12 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/TVEnglish"
+                android:id="@+id/english"
                 style="@style/TextLanguage"
                 android:text="@string/english" />
 
             <TextView
-                android:id="@+id/TVPolish"
+                android:id="@+id/polish"
                 style="@style/TextLanguage"
                 android:text="@string/polski" />
 

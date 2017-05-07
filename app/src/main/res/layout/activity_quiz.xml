@@ -86,26 +86,28 @@
         <CheckBox
             android:id="@+id/A3a"
             style="@style/CheckBoxStyle"
-            android:onClick="onCheckboxClickedA"
             android:text="@string/A3a" />
 
         <CheckBox
             android:id="@+id/A3b"
             style="@style/CheckBoxStyle"
-            android:onClick="onCheckboxClickedB"
             android:text="@string/A3b" />
 
         <CheckBox
             android:id="@+id/A3c"
             style="@style/CheckBoxStyle"
-            android:onClick="onCheckboxClickedC"
             android:text="@string/A3c" />
 
         <CheckBox
             android:id="@+id/A3d"
             style="@style/CheckBoxStyle"
-            android:onClick="onCheckboxClickedD"
             android:text="@string/A3d" />
+
+        <Button
+            android:id="@+id/submitCheckBox"
+            style="@style/ButtonMain"
+            android:onClick="submitCheckBox"
+            android:text="@string/submitCheckBox" />
 
         <ImageView
             android:id="@+id/imageQ4"
@@ -138,13 +140,13 @@
             android:orientation="horizontal">
 
             <RadioButton
-                android:id="@+id/Poland"
+                android:id="@+id/poland"
                 style="@style/RadioGroupStyle"
                 android:onClick="clickQ5"
                 android:text="@string/A5a" />
 
             <RadioButton
-                android:id="@+id/Island"
+                android:id="@+id/iceland"
                 style="@style/RadioGroupStyle"
                 android:onClick="clickQ5"
                 android:text="@string/A5b" />
