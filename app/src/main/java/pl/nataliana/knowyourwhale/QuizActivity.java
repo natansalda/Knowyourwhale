@@ -114,7 +114,15 @@ public class QuizActivity extends AppCompatActivity {
     //this method is called when the user clicks submit button
     public void submit(View view) {
         freeWilly();
-        Toast.makeText(this, getString(R.string.score) + " " + score + getString(R.string.for7), Toast.LENGTH_LONG).show();
+        if (score > 5) {
+            Toast.makeText(this, getString(R.string.score) + " " + score + getString(R.string.for7) + " " + getString(R.string.goodScore), Toast.LENGTH_LONG).show();
+        }
+        else if (score > 3){
+            Toast.makeText(this, getString(R.string.score) + " " + score + getString(R.string.for7) + " " + getString(R.string.mediumScore), Toast.LENGTH_LONG).show();
+        }
+        else {
+            Toast.makeText(this, getString(R.string.score) + " " + score + getString(R.string.for7) + " " + getString(R.string.badScore), Toast.LENGTH_LONG).show();
+        }
         score = 0;
     }
 

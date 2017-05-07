@@ -22,24 +22,24 @@
         android:id="@+id/textName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/Language_layout"
+        android:layout_centerHorizontal="true"
         android:hint="@string/putName"
         android:inputType="textCapWords"
         android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        android:layout_above="@+id/Language_layout"
-        android:layout_centerHorizontal="true" />
+        android:textColorHint="@color/white" />
 
     <Button
         android:id="@+id/startQuiz"
         android:layout_width="130dp"
         android:layout_height="50dp"
+        android:layout_below="@+id/textName"
+        android:layout_centerHorizontal="true"
         android:background="@drawable/button"
         android:onClick="startQuiz"
         android:text="@string/start"
         android:textColor="@color/white"
-        android:typeface="monospace"
-        android:layout_below="@+id/textName"
-        android:layout_centerHorizontal="true" />
+        android:typeface="monospace" />
 
     <LinearLayout
         android:id="@+id/Language_layout"

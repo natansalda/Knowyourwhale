@@ -29,4 +29,7 @@
     <string name="english">ENGLISH</string>
     <string name="polski">POLSKI</string>
     <string name="exit_press_back_twice_message">Press second time to exit</string>
+    <string name="goodScore">Congratulations, you did well!</string>
+    <string name="mediumScore">Could be better!</string>
+    <string name="badScore">You may want to try again!</string>
 </resources>
