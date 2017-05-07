@@ -103,12 +103,6 @@
             style="@style/CheckBoxStyle"
             android:text="@string/A3d" />
 
-        <Button
-            android:id="@+id/submitCheckBox"
-            style="@style/ButtonMain"
-            android:onClick="submitCheckBox"
-            android:text="@string/submitCheckBox" />
-
         <ImageView
             android:id="@+id/imageQ4"
             style="@style/Image"

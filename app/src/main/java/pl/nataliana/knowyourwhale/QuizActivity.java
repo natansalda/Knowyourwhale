@@ -77,14 +77,6 @@ public class QuizActivity extends AppCompatActivity {
         }
     }
 
-    //this method is called when the user answers 3rd question
-    public void submitCheckBox(View view) {
-        if (A3a.isChecked() && A3b.isChecked() && !A3c.isChecked() && A3d.isChecked()) {
-            score++;
-        }
-    }
-
-
     //this method is called to check 4th question
     public void freeWilly() {
         String willy = textAnswer.getText().toString();
@@ -104,6 +96,9 @@ public class QuizActivity extends AppCompatActivity {
     //this method is called when the user clicks submit button
     public void submit(View view) {
         freeWilly();
+        if (A3a.isChecked() && A3b.isChecked() && !A3c.isChecked() && A3d.isChecked()) {
+            score++;
+        }
         if (score > 4) {
             Toast.makeText(this, getString(R.string.score) + " " + score + getString(R.string.for7) + " " + getString(R.string.goodScore), Toast.LENGTH_LONG).show();
         } else if (score > 2) {
